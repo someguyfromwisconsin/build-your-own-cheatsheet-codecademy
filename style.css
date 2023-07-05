@@ -13,7 +13,7 @@ th {
 }
 
 tr, td {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 255, 0.664);
     border-collapse: collapse;
 }
 
