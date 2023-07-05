@@ -12,7 +12,7 @@
     <h1>HTML</h1>
         <p>The follow is a list of the <strong>HTML</strong> elements listed on the Codecademy cheatsheets.</p>
         <table id="html_elements">
-            <thead>
+            <thead>HTML Elements
                 <tr>
                     <th>Tag</th>
                     <th>Name</th>
@@ -21,12 +21,44 @@
                 </tr>
                 <tbody>
                     <tr>
-                        <td>Tag 1</td>                        <td>Name 1</td>
-                        <td>Description 1</td>
+                        <td><xmp><element></element></xmp></td>                        
+                        <td>Element Content</td>
+                        <td>The content of an HTML element is the information between the opening and closing tags of an element.</td>
                     </tr>
                     <tr>
-                        <td>Tag 2</td>
+                        <td><xmp><xmp></xmp></td>
+                        <td>HTML Example Element</td>
+                        <td>Renders the text between the start and end tags without interpreting the HTML in between.
+                        <br>
+                        Note: This will create a link break.
+                        </td>
+                    <tr>
+                        <td><xmp>&lt;</xmp></td>
+                        <td>Left Tag</td>
+                        <td>Symbol written within HTML to explicitly define less than symbol.</td>
                     </tr>
+                    <tr>
+                        <td><xmp>&gt;</xmp></td>
+                        <td>Right Tag</td>
+                        <td>Symbol written within HTML to explicitly define greater than symbol.</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td><xmp><li></xmp></td>
+                        <td>List Item Element</td>
+                        <td>The list item element create list items inside:
+                            <ul>
+                                <li><xmp>Ordered lists <ol></xmp></li>
+                                <li><xmp>Unordered lists <ul></xmp></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><xmp><video></xmp></td>
+                        <td>Video Element</td>
+                        <td>The &lt;video&gt; element embeds a media player for video playback. The src attribute will contain the URL to the video. Adding the controls attribute will display video controls in the media player.
+                        <br>
+                        Note: The content inside the opening and closing tag is shown as a fallback in browsers that don’t support the element.</td>
                 </tbody>
         </table>
     <h1>CSS</h1>
@@ -49,3 +81,11 @@
         </table>
 </body>
 </html>
+
+<!--Below is a sample table row to copy/paste
+                    <tr>
+                        <td>&lt;tag&gt;</td>
+                        <td>name</td>
+                        <td>description</td>
+                    </tr>
+-->
