@@ -209,7 +209,7 @@ Oh joy! A line break.
                 </tr>
             </tbody>
         </table>
-<br>
+
 <!--Start of HTML Structure Table-->
         <table id="html_structure">
             <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-html/modules/wdcp-22-learn-html-structure-c107c169-b1ea-46cc-868e-4ad7c884a44c/cheatsheet" target="_blank">HTML Structure</a>
@@ -361,10 +361,191 @@ Oh joy! A line break.
             </thead>
             <tbody>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
-                    <td class="example"><xmp>example</xmp></td>
+                    <td>&lt;table&gt;</td>
+                    <td>Table Element</td>
+                    <td>In HTML, the &lt;table&gt; element has content that is used to represent a two-dimensional table made of rows and columns.</td>
+                    <td class="example">
+<xmp>
+<table>
+<!-- rows and columns will go here -->
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Table Head Element</td>
+                    <td>The &lt;thead&gt;, defines the headings of table columns encapsulated in table rows.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <thead>
+        <tr>
+        <th>heading 1</th>
+        <th>heading 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>col 1</td>
+        <td>col 2</td>
+        </tr>
+    </tbody>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Table Body Element</td>
+                    <td>The &lt;tbody&gt;, is a semantic element that will contain all table data other than table heading and table footer content. If used, &lt;tbody&gt; will contain all table row &lt;tr&gt;s, and indicates that &lt;tr&gt;s make up the body of the table. &lt;table&gt; cannot have both &lt;tbody&gt; and &lt;tr&gt; as direct children.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <tbody>
+        <tr>
+        <td>row 1</td>
+        </tr>
+        <tr>
+        <td>row 2</td>
+        </tr>
+        <tr>
+        <td>row 3</td>
+        </tr>
+    </tbody>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Table Row Element</td>
+                    <td>The &lt;tr&gt;, is used to add rows to a table before adding table data and table headings.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <tr>
+        ...
+    </tr>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Table Data Element</td>
+                    <td>The &lt;td&gt; can be nested inside a table row element, &lt;tr&gt;, to add a cell of data to a table.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <tr>
+        <td>cell one data</td>
+        <td>cell two data</td>
+    </tr>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Table Heading Element</td>
+                    <td>The &lt;th&gt; is used to add titles to rows and columns of a table and must be enclosed in a &lt;tr&gt;.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <tr>
+        <th>column one</th>
+        <th>column two</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>colspan</td>
+                    <td>Column Span Attribute</td>
+                    <td>The colspan attribute on a &lt;th&gt; or &lt;td&gt; element indicates how many columns that particular cell should span within the table. The colspan value is set to 1 by default and will take any positive integer between 1 and 1000.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <tr>
+        <th>row 1:</th>
+        <td>col 1</td>
+        <td>col 2</td>
+        <td>col 3</td>
+    </tr>
+    <tr>
+        <th>row 2:</th>
+        <td colspan="2">col 1 (will span 2 columns)</td>
+        <td>col 2</td>
+        <td>col 3</td>
+    </tr>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>rowspan</td>
+                    <td>Row Span Attribute</td>
+                    <td>Similar to <em>colspan</em>, the <em>rowspan</em> attribute on a table header or table data element indicates how many rows that particular cell should span within the table. The <em>rowspan</em> value is set to 1 by default and will take any positive integer up to 65534.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <tr>
+        <th>row 1:</th>
+        <td>col 1</td>
+        <td>col 2</td>
+    </tr>
+    <tr>
+        <th rowspan="2">row 2 (this row will span 2 rows):</th>
+        <td>col 1</td>
+        <td>col 2</td>
+    </tr>
+    <tr>
+        <td>col 1</td>
+        <td>col 2</td>
+    </tr>
+        <tr>
+        <th>row 3:</th>
+        <td>col 1</td>
+        <td>col 2</td>
+    </tr>
+</table>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Table Footer Element</td>
+                    <td>The &lt;tfoot&gt; uses table rows to give footer content or to summarize content at the end of a table.</td>
+                    <td class="example">
+<xmp>
+<table>
+    <thead>
+        <tr>
+        <th>heading 1</th>
+        <th>heading 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>col 1</td>
+        <td>col 2</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+        <td>summary of col 1</td>
+        <td>summary of col 2</td>
+        </tr>
+    </tfoot>
+</table>
+</xmp>
+                    </td>
                 </tr>
             </tbody>
         </table>
