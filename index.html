@@ -595,38 +595,63 @@ Oh joy! A line break.
                 <tr>
                     <td>&lt;Embedding media&gt;</td>
                     <td>Embedding media</td>
-                    <td colspan="2">Semantic HTML introduces us to &lt;video&gt;, &lt;audio&gt; and &lt;embed&gt;. &lt;video&gt; allows us to add videos to our website. &lt;audio&gt; allows us to implement audio into our website. &lt;embed&gt; can be used to implement any type of media. These elements are universal in that they all use the src attribute to link the source of the content. &lt;video&gt; and &lt;audio&gt; requires a closing tag while &lt;embed&gt; is a self-closing tag.</td>
-                </tr>
-                <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td>Semantic HTML introduces us to &lt;video&gt;, &lt;audio&gt; and &lt;embed&gt;. &lt;video&gt; allows us to add videos to our website. &lt;audio&gt; allows us to implement audio into our website. &lt;embed&gt; can be used to implement any type of media. These elements are universal in that they all use the src attribute to link the source of the content. &lt;video&gt; and &lt;audio&gt; requires a closing tag while &lt;embed&gt; is a self-closing tag.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+<!--Video Tag-->
+<video src="4kvideo.mp4">video not supported</video>
+
+<!--Audio Tag-->
+<audio src="koreanhiphop.mp3"></audio>
+
+<!--Embed tag-->
+<embed src="babyyoda.gif"/>
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td>&lt;figure&gt; and &lt;figcaption&gt;</td>
+                    <td>Figure and Figure Caption Elements</td>
+                    <td>The &lt;figure&gt; is used to encapsulate media such as an image, diagram. or code snippet. The &lt;figcaption&gt; is used to describe the media encapsulated within the &lt;figure&gt;. Developers will normally use &lt;figcaption&gt; within the &lt;figure&gt; to group the media and description. This way, if a developer decides to change the position of the media, the description will follow along with it.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+<figure>
+    <img src="qwerty.jpg">
+    <figcaption>The image shows the layout of a qwerty keyboard.</figcaption>
+</figure>
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td>&lt;section&gt; and &lt;article&gt;</td>
+                    <td>Section and Article Elements</td>
+                    <td>&lt;section&gt; defines elements in a document, such as chapters, headings, or any other area of the document with the same theme. &lt;article&gt; holds content that makes sense on its own such as articles, blogs, and comments. Generally developers will use &lt;section&gt; to define a theme for the webpage and use &lt;article&gt; to write independent content for that theme. This does not mean that &lt;article&gt; has to be used with &lt;section&gt;.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+<section>
+    <!--defines theme-->
+    <h2>Top Sports league in America</h2>
+    <!--writes independent content relating to that theme-->
+    <article>
+        <p>One of the top sports league is the nba.</p>
+    </article>
+</section>
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td>&lt;aside&gt;</td>
+                    <td>Aside Element</td>
+                    <td>The &lt;aside&gt; element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. Usually, this information would be in a sidebar or a location where it doesn’t obstruct the main piece of content. An example of this would be an article that discusses how to take care of a dog and next to the article an ad would appear advertising a dog grooming product.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+<article>
+<!--Main Content-->
+</article>
+<aside>
+<!--Additional information-->
+</aside>
+</xmp>
                     </td>
                 </tr>
             </tbody>
