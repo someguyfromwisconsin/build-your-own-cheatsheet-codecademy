@@ -242,6 +242,110 @@
                     <td class="example"><xmp><a href="http://www.codecademy.com" taget="_blank">Visit this site</a></xmp></td>
                 </tr>
                 </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Head Element</td>
+                    <td>The &lt;head&gt; element contains general information about an HTML page that isn’t displayed on the page itself. This information is called metadata and includes things like the title of the HTML document and links to stylesheets.</td>
+                    <td class="example">
+<xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        Metadata is contained in this element
+    </head>
+</html>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Link</td>
+                    <td>Link to a Different Part of the Page #</td>
+                    <td>The &lt;a&gt; can create hyperlinks to different parts of the same HTML document using the href attribute to point to the desired location with # followed by the id of the element to link to.</td>
+                    <td class="example">
+<xmp>
+<div>
+    <p id="id-of-element-to-link-to">A different part of the page!</p>
+</div>
+    
+<a href="#id-of-element-to-link-to">Take me to a different part of the page</a>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>HTML Element</td>
+                    <td>The &lt;html&gt;, the root of an HTML document, should be added after the !DOCTYPE declaration. All content/structure for an HTML document should be contained between the opening and closing &lt;html&gt; tags.</td>
+                    <td class="example">
+<xmp>
+<!DOCTYPE html>
+<html>
+  I'm a comment
+</html>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td><xmp><!--Comment--></xmp></td>
+                    <td>Comments</td>
+                    <td>In HTML, comments can be added between an opening &lt;!-- and closing --&gt;. Content inside of comments will not be rendered by browsers, and are usually used to describe a part of code or provide other details.
+                    <br>
+                    Comments can span single or multiple lines.</td>
+                    <td class="example">
+<xmp>
+<!-- Main site content -->
+<div>Content</div>
+
+<!--
+  Comments can be 
+  multiple lines long.
+-->
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Whitespace</td>
+                    <td>Whitespace</td>
+                    <td>Whitespace, such as line breaks, added to an HTML document between block-level elements will generally be ignored by the browser and are not added to increase spacing on the rendered HTML page. Rather, whitespace is added for organization and easier reading of the HTML document itself.</td>
+                    <td class="example">
+<xmp>
+<p>Test paragraph</p>
+
+<!-- The whitespace created by this line, and above/below this line is ignored by the browser-->
+
+<p>Another test paragraph, this will sit right under the first paragraph, no extra space between.</p>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Title Element</td>
+                    <td>The &lt;title&gt; contains a text that defines the title of an HTML document. The title is displayed in the browser’s title bar or tab in which the HTML page is displayed. The &lt;title&gt; can only be contained inside a document’s &lt;head&gt; element.</td>
+                    <td class="example">
+<xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the HTML page</title>
+  </head>
+</html>
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;File Path&gt;</td>
+                    <td>File Path</td>
+                    <td>URL paths in HTML can be absolute paths, like a full URL, for example: https://developer.mozilla.org/en-US/docs/Learn or a relative file path that links to a local file in the same folder or on the same server, for example: ./style.css. Relative file paths begin with ./ followed by a path to the local file. ./ tells the browser to look for the file path from the current folder.</td>
+                    <td class="example">
+                        <xmp><a href="https://developer.mozilla.org/en-US/docs/Web">The URL for this anchor element is an absolute file path.</a></xmp>
+                        <xmp><a href="./about.html">The URL for this anchor element is a relative file path.</a></xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                    <td>Document Type Declaration</td>
+                    <td>The document type declaration &lt;!DOCTYPE html&gt; is required as the first line of an HTML document. The doctype declaration is an instruction to the browser about what type of document to expect and which version of HTML is being used, in this case it’s HTML5.</td>
+                    <td class="example"><xmp><!DOCTYPE html></xmp></td>
+                </tr>
             </tbody>
         </table>
     <h1>CSS</h1>
