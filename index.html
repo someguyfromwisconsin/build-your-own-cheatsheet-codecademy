@@ -11,6 +11,7 @@
         <p>The purpose of this site is to be a repository of all the cheatsheets that are provided by Codecademy. Instead of having to look through several pages or PDFs, my hope is that this will be a ever-udpated document that I, and possible others, can use.</p>
     <h1>HTML</h1>
         <p>The follow is a list of the <strong>HTML</strong> elements listed on the Codecademy cheatsheets.</p>
+
 <!--Start of HTML Elements Table-->
         <table id="html_elements">
             <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-html/modules/wdcp-22-learn-html-elements-bb06b814-30b2-4873-9450-18c0a1fa7124/cheatsheet" target="_blank">HTML Elements</a>
@@ -21,139 +22,139 @@
                     <th id="example">Example</th>
             </thead>
                 </tr>
-                <tbody>
-                    <tr>
-                        <td><xmp><element></element></xmp></td>                        
-                        <td>Element Content</td>
-                        <td>The content of an HTML element is the information between the opening and closing tags of an element.</td>
-                        <td class="example"><xmp><h1>Codecademy is awesome! 🙂</h1></xmp></td>
-                    </tr>
-                    <tr>
-                        <td><xmp><xmp></xmp></td>
-                        <td>HTML Example Element</td>
-                        <td>Renders the text between the start and end tags without interpreting the HTML in between.
-                        <br>
-                        Note: This sometimes will create a link break.
-                        </td>
-                        <td class="example">&lt;xmp&gt;Here be some code with a &lt;code&gt; element in it&lt;/xmp&gt;</td>
-                    </tr>
-                    <tr>
-                        <td><xmp>&lt;</xmp></td>
-                        <td>Left Tag</td>
-                        <td>Symbol written within HTML to explicitly define less than symbol.</td>
-                        <td class="example">&lt;NotCode&gt;</td>
+            <tbody>
+                <tr>
+                    <td><xmp><element></element></xmp></td>                        
+                    <td>Element Content</td>
+                    <td>The content of an HTML element is the information between the opening and closing tags of an element.</td>
+                    <td class="example"><xmp><h1>Codecademy is awesome! 🙂</h1></xmp></td>
+                </tr>
+                <tr>
+                    <td><xmp><xmp></xmp></td>
+                    <td>HTML Example Element</td>
+                    <td>Renders the text between the start and end tags without interpreting the HTML in between.
+                    <br>
+                    Note: This sometimes will create a link break.
+                    </td>
+                    <td class="example">&lt;xmp&gt;Here be some code with a &lt;code&gt; element in it&lt;/xmp&gt;</td>
+                </tr>
+                <tr>
+                    <td><xmp>&lt;</xmp></td>
+                    <td>Left Tag</td>
+                    <td>Symbol written within HTML to explicitly define less than symbol.</td>
+                    <td class="example">&lt;NotCode&gt;</td>
 
-                    </tr>
-                    <tr>
-                        <td><xmp>&gt;</xmp></td>
-                        <td>Right Tag</td>
-                        <td>Symbol written within HTML to explicitly define greater than symbol.</td>
-                        <td class="example">&lt;NotCode&gt;</td>
-                    </tr>
-                    </tr>
-                    <tr>
-                        <td><xmp><li></xmp></td>
-                        <td>List Item Element</td>
-                        <td>The &lt;li&gt; create list items inside:
-                            <ul>
-                                <li><xmp>Ordered lists <ol></xmp></li>
-                                <li><xmp>Unordered lists <ul></xmp></li>
-                            </ul>
-                        </td>
-                        <td class="example">
+                </tr>
+                <tr>
+                    <td><xmp>&gt;</xmp></td>
+                    <td>Right Tag</td>
+                    <td>Symbol written within HTML to explicitly define greater than symbol.</td>
+                    <td class="example">&lt;NotCode&gt;</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td><xmp><li></xmp></td>
+                    <td>List Item Element</td>
+                    <td>The &lt;li&gt; create list items inside:
+                        <ul>
+                            <li><xmp>Ordered lists <ol></xmp></li>
+                            <li><xmp>Unordered lists <ul></xmp></li>
+                        </ul>
+                    </td>
+                    <td class="example">
 <xmp>
-    <ol>
-        <li>Head east on Prince St</li>
-        <li>Turn left on Elizabeth</li>
-    </ol>
-    <ul>
-        <li>Cookies</li>
-        <li>Milk</li>
-    </ul>
+<ol>
+    <li>Head east on Prince St</li>
+    <li>Turn left on Elizabeth</li>
+</ol>
+<ul>
+    <li>Cookies</li>
+    <li>Milk</li>
+</ul>
 </xmp>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><xmp><video></xmp></td>
-                        <td>Video Element</td>
-                        <td>The &lt;video&gt; element embeds a media player for video playback. The src attribute will contain the URL to the video. Adding the controls attribute will display video controls in the media player.
-                        <br>
-                        Note: The content inside the opening and closing tag is shown as a fallback in browsers that don’t support the element.</td>
-                        <td class="example">&lt;video src="test-video.mp4" controls&gt;
-                            Video not supported
-                            &lt;/video&gt;</td>
-                    </tr>
-                    <tr>
-                        <td>&lt;em&gt;</td>
-                        <td>Emphasis Element</td>
-                        <td>The &lt;em&gt; element emphasizes text and browsers will usually italicize the emphasized text by default.</td>
-                        <td class="example"><xmp><p>This <em>word</em> will be emphasized in italics.</p></xmp></td>
-                    </tr>
-                    <tr>
-                        <td>&lt;strong&gt;</td>
-                        <td>Strong Element</td>
-                        <td>The &lt;strong&gt; element highlights important, serious, or urgent text and browsers will normally render this highlighted text in bold by default..</td>
-                        <td class="example"><xmp><p>This is <strong>important</strong> text!</p></xmp></td>
-                    </tr>
-                    <tr>
-                        <td>&lt;ol&gt;</td>
-                        <td>Ordered List Element</td>
-                        <td>The &lt;ol&gt; element creates a list of items in sequential order. Each list item appears numbered by default.</td>
-                        <td class="example">
+                    </td>
+                </tr>
+                <tr>
+                    <td><xmp><video></xmp></td>
+                    <td>Video Element</td>
+                    <td>The &lt;video&gt; element embeds a media player for video playback. The src attribute will contain the URL to the video. Adding the controls attribute will display video controls in the media player.
+                    <br>
+                    Note: The content inside the opening and closing tag is shown as a fallback in browsers that don’t support the element.</td>
+                    <td class="example">&lt;video src="test-video.mp4" controls&gt;
+                        Video not supported
+                        &lt;/video&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Emphasis Element</td>
+                    <td>The &lt;em&gt; element emphasizes text and browsers will usually italicize the emphasized text by default.</td>
+                    <td class="example"><xmp><p>This <em>word</em> will be emphasized in italics.</p></xmp></td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Strong Element</td>
+                    <td>The &lt;strong&gt; element highlights important, serious, or urgent text and browsers will normally render this highlighted text in bold by default..</td>
+                    <td class="example"><xmp><p>This is <strong>important</strong> text!</p></xmp></td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>Ordered List Element</td>
+                    <td>The &lt;ol&gt; element creates a list of items in sequential order. Each list item appears numbered by default.</td>
+                    <td class="example">
 <xmp>
-    <ol>
-        <li>Preheat oven to 325 F 👩‍🍳</li>
-        <li>Drop cookie dough 🍪</li>
-        <li>Bake for 15 min ⏰</li>
-    </ol>
+<ol>
+    <li>Preheat oven to 325 F 👩‍🍳</li>
+    <li>Drop cookie dough 🍪</li>
+    <li>Bake for 15 min ⏰</li>
+</ol>
 </xmp></td>
-                    </tr>
-                    <tr>
-                        <td>&lt;div&gt;</td>
-                        <td>Div Element</td>
-                        <td>The &lt;div&gt; is used as a container that divides an HTML document into sections and is short for “division”. <div> elements can contain flow content such as headings, paragraphs, links, images, etc.</td>
-                        <td class="example">
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Div Element</td>
+                    <td>The &lt;div&gt; is used as a container that divides an HTML document into sections and is short for “division”. <div> elements can contain flow content such as headings, paragraphs, links, images, etc.</td>
+                    <td class="example">
 <xmp>
-    <div>
-        <h1>A section of grouped elements</h1>
-        <p>Here’s some text for the section</p>
-    </div>
-    <div>
-        <h1>Second section of grouped elements</h1>
-        <p>Here’s some text</p>
-    </div>
+<div>
+    <h1>A section of grouped elements</h1>
+    <p>Here’s some text for the section</p>
+</div>
+<div>
+    <h1>Second section of grouped elements</h1>
+    <p>Here’s some text</p>
+</div>
 </xmp>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><xmp><element name="value"></element></xmp>></td>
-                        <td>Attribute Name and Values</td>
-                        <td>HTML attributes consist of a name and a value using the following syntax: name="value" and can be added to the opening tag of an HTML element to configure or change the behavior of the element.</td>
-                        <td class="example"><xmp><elementName name="value"></elementName></xmp></td>
-                    </tr>
-                    <tr>
-                        <td>&lt;br&gt;</td>
-                        <td>Line Break Element</td>
-                        <td>The &lt;br&gt; will create a line break in text and is especially useful where a division of text is required, like in a postal address. The line break element requires only an opening tag and must not have a closing tag.</td>
-                        <td class="example">
+                    </td>
+                </tr>
+                <tr>
+                    <td><xmp><element name="value"></element></xmp>></td>
+                    <td>Attribute Name and Values</td>
+                    <td>HTML attributes consist of a name and a value using the following syntax: name="value" and can be added to the opening tag of an HTML element to configure or change the behavior of the element.</td>
+                    <td class="example"><xmp><elementName name="value"></elementName></xmp></td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Line Break Element</td>
+                    <td>The &lt;br&gt; will create a line break in text and is especially useful where a division of text is required, like in a postal address. The line break element requires only an opening tag and must not have a closing tag.</td>
+                    <td class="example">
 <xmp>
-    A line break haiku.<br>
-    Poems are a great use case.<br>
-    Oh joy! A line break.
+A line break haiku.<br>
+Poems are a great use case.<br>
+Oh joy! A line break.
 </xmp>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>&lt;img&gt;</td>
-                        <td>Image Element</td>
-                        <td>HTML image &lt;img&gt;s embed images in documents. The src attribute contains the image URL and is mandatory. <img> is an empty element meaning it should not have a closing tag.</td>
-                        <td class="example"><xmp><img src="image.png"></xmp></td>
-                    </tr>
-                    <tr>
-                        <td>&lt;h1&gt;-&lt;h6&gt;</td>
-                        <td>Heading Elements</td>
-                        <td>HTML can use six different levels of heading elements. The heading elements are ordered from the highest level &lt;h1&gt; to the lowest level &lt;h6&gt;.</td>
-                        <td class="example">
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Image Element</td>
+                    <td>HTML image &lt;img&gt;s embed images in documents. The src attribute contains the image URL and is mandatory. <img> is an empty element meaning it should not have a closing tag.</td>
+                    <td class="example"><xmp><img src="image.png"></xmp></td>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;-&lt;h6&gt;</td>
+                    <td>Heading Elements</td>
+                    <td>HTML can use six different levels of heading elements. The heading elements are ordered from the highest level &lt;h1&gt; to the lowest level &lt;h6&gt;.</td>
+                    <td class="example">
 <xmp>
 <h1>Breaking News</h1>
 <h2>This is the 1st subheading</h2>
@@ -161,52 +162,52 @@
 ...
 <h6>This is the 5th subheading</h6>
 </xmp>
-                        </td>
-                    </tr>
-                    <tr>
-                    <tr>
-                        <td>&lt;p&gt;</td>
-                        <td>Paragraph Element</td>
-                        <td>The <p> paragraph element contains and displays a block of text.</td>
-                        <td class="example"><xmp><p>This is a block of text! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></xmp></td>
-                    </tr>
-                    <tr>
-                        <td>id=""</td>
-                        <td>Unique ID Attributes</td>
-                        <td>In HTML, specific and unique id attributes can be assigned to different elements in order to differentiate between them.
-                        <br>
-                        When needed, the id value can be called upon by CSS and JavaScript to manipulate, format, and perform specific instructions on that element and that element only. Valid id attributes should begin with a letter and should only contain letters (a-Z), digits (0-9), hyphens (-), underscores (_), and periods (.).</td>
-                        <td class="example"><xmp><h1 id="A1">Hello World</h1></xmp></td>
-                    </tr>
-                    <tr>
-                        <td>alt="text"</td>
-                        <td>alt Attribute</td>
-                        <td>An &lt;img&gt; element can have alternative text via the alt attribute. The alternative text will be displayed if an image fails to render due to an incorrect URL, if the image format is not supported by the browser, if the image is blocked from being displayed, or if the image has not been received from the URL.
-                        <br>
-                        The text will be read aloud if screen reading software is used and helps support visually impaired users by providing a text descriptor for the image content on a webpage.</td>
-                        <td class="example"><xmp><img src="path/to/image" alt="text describing image" /></xmp></td>
-                    </tr>
-                    <tr>
-                        <td>&lt;body&gt;</td>
-                        <td>Body Element</td>
-                        <td>The &lt;body&gt; represents the content of an HTML document. Content inside &lt;body&gt; tags are rendered on the web browsers.
-                        <br>
-                        Note: There can be only one &lt;body&gt; element in a document.</td>
-                        <td class="example">
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Paragraph Element</td>
+                    <td>The <p> paragraph element contains and displays a block of text.</td>
+                    <td class="example"><xmp><p>This is a block of text! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></xmp></td>
+                </tr>
+                <tr>
+                    <td>id=""</td>
+                    <td>Unique ID Attributes</td>
+                    <td>In HTML, specific and unique id attributes can be assigned to different elements in order to differentiate between them.
+                    <br>
+                    When needed, the id value can be called upon by CSS and JavaScript to manipulate, format, and perform specific instructions on that element and that element only. Valid id attributes should begin with a letter and should only contain letters (a-Z), digits (0-9), hyphens (-), underscores (_), and periods (.).</td>
+                    <td class="example"><xmp><h1 id="A1">Hello World</h1></xmp></td>
+                </tr>
+                <tr>
+                    <td>alt="text"</td>
+                    <td>alt Attribute</td>
+                    <td>An &lt;img&gt; element can have alternative text via the alt attribute. The alternative text will be displayed if an image fails to render due to an incorrect URL, if the image format is not supported by the browser, if the image is blocked from being displayed, or if the image has not been received from the URL.
+                    <br>
+                    The text will be read aloud if screen reading software is used and helps support visually impaired users by providing a text descriptor for the image content on a webpage.</td>
+                    <td class="example"><xmp><img src="path/to/image" alt="text describing image" /></xmp></td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Body Element</td>
+                    <td>The &lt;body&gt; represents the content of an HTML document. Content inside &lt;body&gt; tags are rendered on the web browsers.
+                    <br>
+                    Note: There can be only one &lt;body&gt; element in a document.</td>
+                    <td class="example">
 <xmp>
 <body>
 <h1>Learn to code with Codecademy :)</h1>
 </body>
 </xmp>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>&lt;span&gt;</td>
-                        <td>Span Element</td>
-                        <td>The &lt;span&gt; is an inline container for text and can be used to group text for styling purposes. However, as &lt;span&gt; is a generic container to separate pieces of text from a larger body of text, its use should be avoided if a more semantic element is available.</td>
-                        <td class="example"><xmp><p><span>This text</span> may be styled differently than the surrounding text.</p></xmp></td>
-                    </tr>
-                </tbody>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;span&gt;</td>
+                    <td>Span Element</td>
+                    <td>The &lt;span&gt; is an inline container for text and can be used to group text for styling purposes. However, as &lt;span&gt; is a generic container to separate pieces of text from a larger body of text, its use should be avoided if a more semantic element is available.</td>
+                    <td class="example"><xmp><p><span>This text</span> may be styled differently than the surrounding text.</p></xmp></td>
+                </tr>
+            </tbody>
         </table>
 <br>
 <!--Start of HTML Structure Table-->
@@ -348,8 +349,30 @@
                 </tr>
             </tbody>
         </table>
+
+<!--Start of HTML Tables Table-->
+        <table id="html_structure">
+            <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-html/modules/wdcp-22-learn-html-tables-6d939404-9baa-4c0a-b70b-229635097539/cheatsheet" target="_blank">HTML Tables</a>
+                <tr>
+                    <th id="tag">Tag</th>
+                    <th id="name">Name</th>
+                    <th id="description">Description</th>
+                    <th id="example">Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;tag&gt;</td>
+                    <td>name</td>
+                    <td>description</td>
+                    <td class="example"><xmp>example</xmp></td>
+                </tr>
+            </tbody>
+        </table>
+        </table>
     <h1>CSS</h1>
         <p>The follow is a list of the <strong>CSS</strong> elements listed on the Codecademy cheatsheets.</p>
+
+
 <!--Start of a CSS Table INCOMPLETE-->
         <table id="css_elements">
             <thead>
@@ -379,4 +402,24 @@
                         <td>description</td>
                         <td class="example"><xmp>example</xmp></td>
                     </tr>
+-->
+
+<!--Below is a sample table to copy/paste
+        <table id="html_elements">
+            <thead><a href="INSERT URL" target="_blank">HTML Elements</a>
+                <tr>
+                    <th id="tag">Tag</th>
+                    <th id="name">Name</th>
+                    <th id="description">Description</th>
+                    <th id="example">Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;tag&gt;</td>
+                    <td>name</td>
+                    <td>description</td>
+                    <td class="example"><xmp>example</xmp></td>
+                </tr>
+            </tbody>
+        </table>
 -->
