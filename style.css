@@ -26,3 +26,7 @@ xmp {
     font-weight: bold;
     background-color: black;
 }
+
+.nobullet {
+    list-style-type: none;
+}
