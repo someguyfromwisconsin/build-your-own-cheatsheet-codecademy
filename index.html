@@ -963,18 +963,93 @@ li {
         <table id="css_box">
             <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-css/modules/wdcp-22-learn-css-the-box-model-c8543ca0-92d4-4824-bb89-35a1fb0189d4/cheatsheet" target="_blank">CSS: The Box Model</a>
                 <tr>
-                    <th id="tag">Tag</th>
-                    <th id="name">Name</th>
+                    <th colspan="2" id="name">Name</th>
                     <th id="description">Description</th>
                     <th id="example">Example</th>
             </thead>
             <tbody>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
+                    <td colspan="2">CSS Margin Collapse</td>
+                    <td>CSS <em>margin collapse</em> occurs when the top and bottom margins of blocks are combined into a single margin equal to the largest individual block margin.
+
+                        Margin collapse only occurs with vertical margins, not for horizontal margins.</td>
+                    <td class="example">
+<xmp>
+/* The vertical margins will collapse to 30 pixels
+instead of adding to 50 pixels. */
+.block-one {
+    margin: 20px;
+}
+
+.block-two {
+    margin: 30px;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">CSS Auto Keyword</td>
+                    <td>The value <em>auto</em> can be used with the property <em>margin</em> to horizontally center an element within its container. The <em>margin</em> property will take the width of the element and will split the rest of the space equally between the left and right margins.</td>
+                    <td class="example">
+<xmp>
+div {
+    margin: auto;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Dealing With Overflow</td>
+                    <td>If content is too large for its container, the CSS <em>overflow</em> property will determine how the browser handles the problem.
+                    <br>
+                    By default, it will be set to <em>visible</em> and the content will take up extra space. It can also be set to <em>hidden</em>, or to <em>scroll</em>, which will make the overflowing content accessible via scroll bars within the original container.</td>
+                    <td class="example">
+<xmp>
+small-block {
+    overflow: scroll;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Height and Width Maximums/Minimums</td>
+                    <td>The CSS <em>min-width</em> and <em>min-height</em> properties can be used to set a minimum width and minimum height of an element’s box. CSS <em>max-width</em> and <em>max-height</em> properties can be used to set maximum widths and heights for element boxes.</td>
+                    <td class="example">
+<xmp>
+/* Any element with class "column" will be at most 200 pixels wide, despite the width property value of 500 pixels. */
+
+.column {
+    max-width: 200px;
+    width: 500px;
+}
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">name</td>
                     <td>description</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+example
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">name</td>
+                    <td>description</td>
+                    <td class="example">
+<xmp>
+example
+</xmp>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">name</td>
+                    <td>description</td>
+                    <td class="example">
+<xmp>
+example
+</xmp>
                     </td>
                 </tr>
             </tbody>
@@ -1007,7 +1082,9 @@ li {
                     <td>name</td>
                     <td>description</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+example
+</xmp>
                     </td>
                 </tr>
             </tbody>
