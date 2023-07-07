@@ -655,7 +655,7 @@ Oh joy! A line break.
 <!--Start of CSS Selectors and Visual Rules Table-->
     <div class="table">
 
-        <table id="html_elements">
+        <table id="css_selectors_visuals">
             <thead><a href="https://www.codecademy.com/learn/paths/fscj-22-web-development-foundations/tracks/fscj-22-fundamentals-of-css/modules/wdcp-22-learn-css-selectors-and-visual-rules-0507dd23-134e-4011-af2c-a06b06ad53f2/cheatsheet" target="_blank">CSS: Selectors and Visual Rules</a>
                 <tr>
                     <th id="tag">Tag</th>
@@ -679,7 +679,7 @@ Oh joy! A line break.
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">&lt;CSS in Separate File&gt;</td>
+                    <td colspan="2">Write CSS in Separate File</td>
                     <td>CSS code can be written in its own files to keep it separate from the HTML code. The extension for CSS files is .css. These can be linked to an HTML file using a &lt;link&gt; tag in the &lt;head&gt; section.</td>
                     <td class="example">
 <xmp>
@@ -690,203 +690,268 @@ Oh joy! A line break.
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">Write CSS in HTML File</td>
+                    <td>CSS code can be written in an HTML file by enclosing the code in &lt;style&gt; tags. Code surrounded by &lt;style&gt; tags will be interpreted as CSS syntax.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+<head>
+    <style>
+        h1 {
+        color: blue;
+        }
+    </style>
+</head>
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">Inline Style</td>
+                    <td>CSS styles can be directly added to HTML elements by using the style attribute in the element’s opening tag. Each style declaration is ended with a semicolon. Styles added in this manner are known as inline styles.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+<h2 style="text-align: center;">Centered text</h2>
+
+<p style="color: blue; font-size: 18px;">Blue, 18-point text</p>
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td>.class</td>
+                    <td>Class Selector</td>
+                    <td>CSS classes can be reusable and applied to many elements. Class selectors are denoted with a period . followed by the class name.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+/* Selects all elements with class="column" */
+.column {
+    }
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td>#id</td>
+                    <td>ID Selector</td>
+                    <td>CSS ID selectors should be unique and used to style only a single element. ID selectors are denoted with a hash sign # followed by the id name.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+/* Selects element with id="first-item" */
+#first-item {
+}
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">CSS ID Selectors</td>
+                    <td>The CSS ID selector matches elements based on the contents of their id attribute. The values of id attribute should be unique in the entire DOM. For selecting the element having job-title as the value of the id attribute, a # needs to be prepended.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+#job-title {
+    font-weight: bold;
+    }
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">Groups of CSS Selectors</td>
+                    <td>Match multiple selectors to the same CSS rule, using a comma-separated list. In this example, the text for both h1 and h2 is set to red.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+h1, h2 {
+    color: red;
+}
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">Chaining Selectors</td>
+                    <td>CSS selectors can be chained so that rule sets apply only to elements that match all criteria. For instance, to select &lt;h3&gt; elements that also have the section-heading class, the selector h3.section-heading can be used</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+/* Select h3 elements with the section-heading class */
+h3.section-heading {
+    color: blue;
+}
+
+/* Select elements with the section-heading and button class */
+.section-heading.button {
+    cursor: pointer;
+}
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">CSS Type Selectors</td>
+                    <td>CSS type selectors are used to match all elements of a given type or tag name. Unlike for HTML syntax, we do not include the angle brackets when using type selectors for tag names. When using type selectors, elements are matched regardless of their nesting level in the HTML.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+/* Selects all <p> tags */
+    p {
+    }
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">CSS Class Selectors</td>
+                    <td>The CSS class selector matches elements based on the contents of their class attribute. For selecting elements having calendar-cell as the value of the class attribute, a . needs to be prepended.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+.calendar-cell {
+    color: #fff;
+    }
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">HTML Attributes with Multiple Values</td>
+                    <td>Some HTML attributes can have multiple attribute values. Multiple attribute values are separated by a space between each attribute.</td>
+                    <td class="example"><xmp><div class="value1 value2 value3"></div></xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Selector Specificity</td>
+                    <td>Specificity is a ranking system that is used when there are multiple conflicting property values that point to the same element. When determining which rule to apply, the selector with the highest specificity wins out. The most specific selector type is the ID selector, followed by class selectors, followed by type selectors. In this example, only color: blue will be implemented as it has an ID selector whereas color: red has a type selector.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+h1#header {
+    color: blue;
+} /* implemented */
+    
+    h1 {
+    color: red;
+} /* Not implemented */
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">CSS Descendant Selector</td>
+                    <td>The CSS <em>descendant</em> selector combinator is used to match elements that are descended from another matched selector. They are denoted by a single space between each selector and the descended selector. All matching elements are selected regardless of the nesting level in the HTML.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+div p { }
+
+section ol li { }
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">CSS Declarations</td>
+                    <td>In CSS, a <em>declaration</em> is the key-value pair of a CSS property and its value. CSS declarations are used to set style properties and construct rules to apply to individual or groups of elements. The property name and value are separated by a colon, and the entire declaration must be terminated by a semi-colon.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+/* 
+CSS declaration format:
+property-name: value;
+*/
+
+/* CSS declarations */
+text-align: center;
+color: purple;
+width: 100px;
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">Font Size</td>
+                    <td>The font-size CSS property is used to set text sizes. Font size values can be many different units or types such as pixels.</td>
+                    <td class="example"><xmp>font-size: 30px;</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Background Color</td>
+                    <td>The background-color CSS property controls the background color of elements.</td>
+                    <td class="example"><xmp>background-color: blue;</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">!important Rule</td>
+                    <td>The CSS !important rule is used on declarations to override any other declarations for a property and ignore selector specificity. !important rules will ensure that a specific declaration always applies to the matched elements. However, generally it is good to avoid using !important as bad practice.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+#column-one {
+    width: 200px !important;
+    }
+    
+    .post-title {
+    color: blue !important;
+    }
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">Opacity</td>
+                    <td>The <em>opacity</em> CSS property can be used to control the transparency of an element. The value of this property ranges from 0 (transparent) to 1 (opaque).</td>
+                    <td class="example"><xmp>opacity: 0.5;</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Font Weight</td>
+                    <td>The <em>font-weight</em> CSS property can be used to set the weight (boldness) of text. The provided value can be a keyword such as <em>bold</em> or <em>normal</em>.</td>
+                    <td class="example"><xmp>font-weight: bold;</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Text Align</td>
+                    <td>The <em>text-align</em> CSS property can be used to set the text alignment of inline contents. This property can be set to these values: <em>left</em>, <em>right</em>, or <em>center</em>.</td>
+                    <td class="example"><xmp>text-align: right</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">CSS Rule Sets</td>
+                    <td>A CSS rule set contains one or more selectors and one or more declarations. The selector(s), which in this example is <em>h1</em>, points to an HTML element. The declaration(s), which in this example are <em>color: blue</em> and <em>text-align: center</em> style the element with a property and value. The rule set is the main building block of a CSS sheet.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+h1 {
+    color: blue;
+    text-align: center;
+    }
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">Setting Foreground Text Color is CSS</td>
+                    <td>Using the <em>color</em> property, foreground text color of an element can be set in CSS. The value can be a valid color name supported in CSS like <em>green</em> or <em>blue</em>. Also, 3 digit or 6 digit color code like <em>#22f</em> or <em>#2a2aff</em> can be used to set the color.</td>
                     <td class="example">
-<xmp>example</xmp>
+<xmp>
+p {
+    color : #2a2aff ;
+}
+    
+span {
+    color : green ;
+}
+</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Resource URLs</td>
+                    <td>In CSS, the <em>url()</em> function is used to wrap resource URLs. These can be applied to several properties such as the <em>background-image</em>.</td>
+                    <td class="example"><xmp>background-image: url("../resources/image.png");</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Background Image</td>
+                    <td>The <em>background-image</em> CSS property sets the background image of an element. An image URL should be provided in the syntax <em>url("moon.jpg")</em> as the value of the property.</td>
+                    <td class="example"><xmp>background-image: url("nyan-cat.gif");</xmp></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Font Family</td>
+                    <td>The <em>font-family</em> CSS property is used to specify the typeface in a rule set. Fonts must be available to the browser to display correctly, either on the computer or linked as a web font. If a font value is not available, browsers will display their default font. When using a multi-word font name, it is best practice to wrap them in quotes.</td>
+                    <td class="example">
+<xmp>
+h2 {
+    font-family: Verdana;
+}
+    
+#page-title {
+    font-family: "Courier New";
+}
+</xmp>
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
+                    <td colspan="2">Color Name Keywords</td>
+                    <td>Color name keywords can be used to set color property values for elements in CSS.</td>
                     <td class="example">
-<xmp>example</xmp>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
-                    <td class="example">
-<xmp>example</xmp>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
-                    <td class="example">
-<xmp>example</xmp>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
-                    <td class="example">
-<xmp>example</xmp>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
-                    <td class="example">
-<xmp>example</xmp>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
-                    <td class="example">
-<xmp>example</xmp>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
-                    <td class="example">
-<xmp>example</xmp>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
-                    <td class="example">
-<xmp>example</xmp>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
-                    <td class="example">
-<xmp>example</xmp>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&lt;tag&gt;</td>
-                    <td>name</td>
-                    <td>description</td>
-                    <td class="example">
-<xmp>example</xmp>
+<xmp>
+h1 {
+    color: aqua;
+}
+    
+li {
+    color: khaki;
+}
+</xmp>
                     </td>
                 </tr>
             </tbody>
@@ -895,7 +960,7 @@ Oh joy! A line break.
 </body>
 </html>
 
-<!--Below is a sample table row to copy/paste
+<!--Below is a template table row to copy/paste
                     <tr>
                         <td>&lt;tag&gt;</td>
                         <td>name</td>
@@ -904,7 +969,7 @@ Oh joy! A line break.
                     </tr>
 -->
 
-<!--Below is a sample table to copy/paste
+<!--Below is a template table to copy/paste
         <table id="html_elements">
             <thead><a href="INSERT URL" target="_blank">Title</a>
                 <tr>
