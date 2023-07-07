@@ -30,3 +30,8 @@ xmp {
 .nobullet {
     list-style-type: none;
 }
+
+em {
+    color: green;
+    font-weight: bold;
+}
